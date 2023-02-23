@@ -1,0 +1,28 @@
+<form>
+  <div class="mb-3">
+    <label for="dni" class="form-label" >Cedula</label>
+    <input type="text" class="form-control" id="dni" name="dni" [(ngModel)]="dni">
+  </div>
+  <div class="mb-3">
+    <label for="name" class="form-label">Nombre completo</label>
+    <input type="text" class="form-control" id="name" name="name" [(ngModel)]="name">
+  </div>
+  <div class="mb-3">
+    <label for="dateContract" class="form-label">Fecha de contratacion</label>
+    <input type="text" class="form-control" id="dateContract" name="dateContract" [(ngModel)]="dateContract">
+  </div>
+  <div class="mb-3">
+    <label for="post" class="form-label">Cargo</label>
+    <input type="text" class="form-control" id="post" name="post" [(ngModel)]="post">
+  </div>
+  <div class="mb-3">
+    <label for="linked" class="form-label">Estado liquidacion</label>
+    <input type="text" class="form-control" id="linked" name="linked" [(ngModel)]="linked">
+  </div>
+  <div class="mb-3">
+    <label for="currenSalary" class="form-label">Salario actual</label>
+    <input type="text" class="form-control" id="currenSalary" name="currenSalary" [(ngModel)]="currenSalary">
+  </div>
+  <button *ngIf="activo" type="button" class="btn btn-primary" (click)="guardar()">Guardar</button>
+<!--  <button *ngIf="!activo" type="button" class="btn btn-primary" (click)="editBird()">Actualizar</button>-->
+</form>
